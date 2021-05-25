@@ -1,0 +1,56 @@
+/* .main-container {
+
+} */
+
+body {
+  background-image: url(../images/bg.jpg);
+  font-size: 10px;
+  color: #BB7CD7;
+
+}
+
+.main-container {
+  width: 68%;
+  background-color: blue;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.carousel-image {
+  height: 300px;
+  background-image: url(../images/grid.png),
+                    url(../images/top-image.png);
+  background-position: 36% 30%;
+  border: 8px solid #FFF;
+}
+
+#peralta-logo {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.article {
+  text-align: center;
+  background-color: #FFF;
+}
+
+.sk8r-img {
+  border: 3px solid #FFF;
+}
+
+.skateboards {
+  transform: rotate(90deg);
+}
+
+.skateboard-imgs {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+
+
+/* background-image: url("../../media/examples/lizard.png"),
+                  url("../../media/examples/star.png"); */
