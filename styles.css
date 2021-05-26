@@ -1,0 +1,200 @@
+ul {
+  list-style: none;
+  padding-left: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url('./images/bg.jpg') top left / cover no-repeat;
+}
+
+section.row {
+  margin-top: 1.5rem;
+}
+/* cover is short hand for background size  */
+
+/* NAV main */
+.nav--main .nav__item {
+  background-color: red;
+}
+
+
+.nav--main .nav__link {
+  color: #FFF;
+}
+
+.nav--main .nav__item:not(:last-child){
+  margin-right: 10px;
+}
+
+/*
+To add space on side of buttons when you downsize:
+ element.style {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav--main .nav__list {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+*/
+
+/* CAROUSEL */
+#carousel {
+  height: 365px;
+  background: url('./images/top-image.png') no-repeat;
+  background-position: -120px -120px;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid #FFF;
+}
+/* this is creating a pseudo element */
+#carousel::before {
+  content: url('./images/grid.png');
+  opacity: .3;
+}
+
+#carousel > .logo {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  /* z-index: 20; */
+}
+
+/* articles */
+
+#news article {
+  background-color: #FFF;
+  padding: 20px;
+}
+
+/* skateboarders */
+
+#skateboarders img {
+  min-width: 100%;
+  min-height: : 100%;
+}
+
+.skateboarder {
+  border: solid 5px #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.skateboarder_lance {
+  margin-right: 1.5rem;
+}
+
+.skateboarder_tommy {
+  height: 100%;
+}
+
+.skateboarder span {
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* SKATEBOARDS */
+
+#skateboards {
+  background: #fff;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .skateboard-image {
+    transform-origin: top left;
+    transform: rotate(90deg) translateY(-25%);
+    height: 260px;
+    width: 65px;
+  }
+}
+
+
+/* #BC7CD7 */
+
+/*
+-if you get rid of the text decoration you need to create style so that the user knows where to click.
+
+-padding will not change the fact that the background still runs from the left edge to the right edge.
+
+-  .nav--main .nav__item:not(:last-child){margin-right: 10px;}
+The reason you said not the last child, is bc you don't need padding on the last one.
+
+ */
+
+
+
+/* PREVIOUS TRIALS/NOTES */
+/* body {
+  background-image: url(../images/bg.jpg);
+  font-size: 10px;
+  color: #656565;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 68%;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+
+.sk8-buttons {
+color: red;
+}
+
+.carousel-image {
+  height: 300px;
+  background-image: url(../images/grid.png),
+                    url(../images/top-image.png);
+  background-position: 36% 30%;
+  border: 8px solid #FFF;
+}
+
+#peralta-logo {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.article {
+  text-align: center;
+  background-color: #FFF;
+}
+
+.sk8r-img {
+  border: 3px solid #FFF;
+}
+
+.skateboards {
+  transform: rotate(90deg);
+}
+
+.skateboard-imgs {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.red .active a,
+.red .active a:hover .nav-pills > li.active > a, .nav-pills > li.active > a:hover {
+    background-color: red !important;
+}
+ */
