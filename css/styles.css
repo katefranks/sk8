@@ -6,7 +6,11 @@ body {
   background-image: url(../images/bg.jpg);
   font-size: 10px;
   color: #BB7CD7;
+}
 
+header {
+  display: flex;
+  justify-content: center;
 }
 
 .main-container {
@@ -17,6 +21,12 @@ body {
 ul {
   padding: 0;
   list-style: none;
+}
+
+
+
+.sk8-buttons {
+color: red;
 }
 
 .carousel-image {
@@ -50,7 +60,10 @@ ul {
   margin-bottom: 65px;
 }
 
-
+.red .active a,
+.red .active a:hover .nav-pills > li.active > a, .nav-pills > li.active > a:hover {
+    background-color: red !important;
+}
 
 /* background-image: url("../../media/examples/lizard.png"),
                   url("../../media/examples/star.png"); */
